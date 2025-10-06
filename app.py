@@ -117,7 +117,7 @@ webrtc_ctx = webrtc_streamer(
     mode=WebRtcMode.SENDRECV,
     video_processor_factory=PizarraProcessor,
     media_stream_constraints={"video": True, "audio": False},
-    async_processing=False,
+    async_processing=True,
 )
 
 st.markdown('<div class="footer">Basado en OpenCV 3.x con Python • Capítulo 8: Object Tracking</div>', unsafe_allow_html=True)
